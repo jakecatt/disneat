@@ -3,6 +3,9 @@
 
 <ul>
 <% @restaurants.each do |restaurant| %>
-	<li><%= restaurant.name %></li>
+	<li>
+		<%= restaurant.name %>: serves alcohol? 
+		<%= restaurant.serves_alcohol %>
+	</li>
 <% end %>
 </ul>
